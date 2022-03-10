@@ -15,7 +15,7 @@
 
         <TextBlock Margin="24">Just drag'n drop your PNG images below. Must have a square aspect ratio and be between 16x16 and 256x256, otherwise I'll complain.</TextBlock>
 
-        <ListBox x:Name="MainList" ItemsSource="{Binding Files}" AllowDrop="True" PreviewDrop="MainList_PreviewDrop" Drop="MainList_Drop" Grid.Row="1">
+        <ListBox x:Name="MainList" ItemsSource="{Binding Files}" AllowDrop="True" PreviewDrop="MainList_PreviewDrop" Drop="MainList_Drop" Grid.Row="1" Margin="24,0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
