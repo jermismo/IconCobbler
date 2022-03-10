@@ -99,7 +99,14 @@ namespace IconCobbler
 
             string saveFile = dlg.FileName;
 
-            IconMaker.MakeIconFile(saveFile, Files);
+            try
+            {
+                IconMaker.MakeIconFile(saveFile, Files);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Whoops!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
