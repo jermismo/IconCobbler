@@ -1,5 +1,5 @@
 # IconCobbler
-An easy Windows app that only does one thing.
+An easy Windows app that only does one thing - combine multiple images into an ICO file.
 
 Drop in .PNG files and out comes a .ICO file. Simple.
 
